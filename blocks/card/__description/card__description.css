@@ -1,0 +1,9 @@
+.card__description {
+    height: 79px;
+    width: 282px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

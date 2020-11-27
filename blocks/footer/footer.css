@@ -1,0 +1,32 @@
+.footer {
+    width: calc(100% - 2*200px);
+    margin: 0 auto;
+    margin-top: 67px;
+    padding-bottom: 60px;
+    
+}
+
+@media screen and (max-width: 1040px) {
+    .footer {
+      width: calc(100% - 2*150px);
+    }
+  }
+
+@media screen and (max-width: 981px) {
+    .footer {
+        width: calc(100% - 2*100px);
+    }
+  }
+
+  @media screen and (max-width: 781px) {
+    .footer {
+        width: calc(100% - 2*50px);
+    }
+  }
+
+  @media screen and (max-width: 681px) {
+    .footer {
+        width: calc(100% - 2*19px);
+    }
+  }
+  

@@ -1,0 +1,15 @@
+.popup__close_zoom {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  margin-left: auto;
+  left: 45px;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__close_zoom {
+    width: 30px;
+    height: 30px;
+    left: 19px;
+  }
+}
