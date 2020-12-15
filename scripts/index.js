@@ -1,4 +1,5 @@
 import FormValidation from "./FormValidator.js";
+import { initialCards } from './Сards.js';
 
 const cardSection = document.querySelector(".cards");
 const popupEdit = document.querySelector(".popup_edit");
