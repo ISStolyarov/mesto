@@ -38,7 +38,7 @@ class FormValidation {
         }
     };
 
-    _setEventListener () {
+    _setEventListener() {
         const inputsList = Array.from(this._element.querySelectorAll(this._inputSelector));
         const submitButton = this._element.querySelector(this._submitButtonSelector);
         inputsList.forEach((input) => {
@@ -49,14 +49,14 @@ class FormValidation {
         });
     };
 
-     enableValidation() {
-        const submitButton = this._element.querySelector(this._submitButtonSelector); 
-         this._element.addEventListener('submit', (evt) => {
-             evt.preventDefault();
-             this._setButtonState(submitButton, false);
-         });
-         this._setEventListener();
-         this._setButtonState(submitButton, this._element.checkValidity());
+    enableValidation() {
+        const submitButton = this._element.querySelector(this._submitButtonSelector);
+        this._element.addEventListener('submit', (evt) => {
+            evt.preventDefault();
+            this._setButtonState(submitButton, false);
+        });
+        this._setEventListener();
+        this._setButtonState(submitButton, this._element.checkValidity());
     };
 };
 
