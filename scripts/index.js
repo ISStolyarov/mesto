@@ -1,3 +1,5 @@
+import FormValidation from "./FormValidator.js";
+
 const cardSection = document.querySelector(".cards");
 const popupEdit = document.querySelector(".popup_edit");
 const popupAdd = document.querySelector(".popup_add");
@@ -18,6 +20,21 @@ const popupPhoto = document.querySelector(".popup__photo");
 const cardTitle = document.querySelector(".popup__input_add_title");
 const cardImage = document.querySelector(".popup__input_add_image");
 const cardTemplate = document.querySelector("#card-template").content;
+
+const validationConfig = {
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__save-button",
+  inputInvalidClass: "popup__input_state_invalid",
+  buttonInvalidClass: "popup__button_invalid",
+};
+ 
+const formEditValidation = new FormValidation(validationConfig, formEdit);
+const formAddValidation = new FormValidation(validationConfig, formAddCard);
+
+formEditValidation.enableValidation();
+formAddValidation.enableValidation();
+
 
 function showPopup(popup) {
   popup.classList.add("popup_opened");
