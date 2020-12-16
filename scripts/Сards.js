@@ -1,3 +1,5 @@
+import { popupPhoto, popupTitlePhoto, popupZoom, showPopup } from './index.js';
+
 const initialCards = [
     {
         name: 'Архыз',
@@ -26,6 +28,7 @@ const initialCards = [
 ];
 
 export { initialCards };
+
 
 
 class Card {
